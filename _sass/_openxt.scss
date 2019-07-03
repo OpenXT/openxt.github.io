@@ -1,0 +1,77 @@
+.table-small {
+    border-collapse: collapse;
+
+    table, td, th {
+        text-align: left;
+        border: 1px solid darkgray;
+        padding: 4px;
+        font-size: 0.95em;
+    }
+
+    tr:nth-child(even) {
+        background: #eee;
+    }
+}
+
+/*
+ * Table of Contents
+ */
+
+#markdown-toc {
+    border: 1px solid #aaa;
+    padding: 2.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    list-style: decimal;
+    display: inline-block;
+}
+
+#markdown-toc ul {
+    list-style: none;
+}
+
+/*
+ * Vertical columns for Ecosystems page
+ * (dual on desktop, single on mobile)
+ */
+
+.box-container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-image: none;
+}
+
+.box-column {
+    width: 340px;
+    @include media-query($on-palm) {
+        width: 100%;
+        min-width: 340px;
+    }
+    float: left;
+}
+
+.box-header {
+    margin: 0px;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+.box-industry, .box-research {
+    margin: 12px;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkgray;
+    border-radius: 6px;
+}
+
+.box-industry {
+    background-color: #F8F8F8;
+}
+
+.box-research {
+    background-color: #F8F8F8;
+}
